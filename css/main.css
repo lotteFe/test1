@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* Scss Document */
+@media screen and (max-width: 767px) { /* line 14, main.scss */
+  .st-Container { padding: 0; } }
+
+/* line 19, main.scss */
+.contBack { background-image: url(../img/bg.jpg); }
+@media screen and (max-width: 767px) { /* line 19, main.scss */
+  .contBack { background-size: 100% auto; } }
+
+/* line 26, main.scss */
+.mainVis { border-bottom: 20px solid #ff7800; border-top: 20px solid #ff7800; padding-top: 74px; padding-bottom: 63px; }
+@media screen and (max-width: 767px) { /* line 26, main.scss */
+  .mainVis { border-bottom: 2.7vw solid #ff7800; border-top: 2.7vw solid #ff7800; padding-top: 6vw; padding-bottom: 5.5vw; } }
+
+/* line 39, main.scss */
+.sectionWrap { padding: 115px 0; }
+@media screen and (max-width: 767px) { /* line 39, main.scss */
+  .sectionWrap { padding: 13vw 0; } }
+/* line 44, main.scss */
+.sectionWrap#cont1 { border-bottom: 20px solid #2bb9c5; }
+@media screen and (max-width: 767px) { /* line 44, main.scss */
+  .sectionWrap#cont1 { border-bottom: 2.7vw solid #2bb9c5; } }
+/* line 50, main.scss */
+.sectionWrap .midashi { width: 325px; margin: auto; margin-bottom: 40px; }
+@media screen and (max-width: 767px) { /* line 50, main.scss */
+  .sectionWrap .midashi { width: 47vw; margin-bottom: 4vw; } }
+/* line 59, main.scss */
+.sectionWrap .text { text-align: center; font-size: 21px; font-family: "ヒラギノ明朝 Pro W3", "ＭＳ Ｐ明朝", "MS PMincho","Hiragino Mincho Pro", "serif"; color: #fff; line-height: 45px; margin-bottom: 60px; }
+@media screen and (max-width: 767px) { /* line 59, main.scss */
+  .sectionWrap .text { font-size: 3.3vw; line-height: 6.7vw; margin-bottom: 9vw; } }
+/* line 73, main.scss */
+.sectionWrap .products .prd { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; width: 757px; margin: auto; margin-bottom: 88px; }
+@media screen and (max-width: 767px) { /* line 73, main.scss */
+  .sectionWrap .products .prd { width: 83%; margin: auto; margin-bottom: 15vw; display: block; } }
+/* line 88, main.scss */
+.sectionWrap .products .prd:nth-child(2n+1) .prd-image { order: 1; }
+/* line 91, main.scss */
+.sectionWrap .products .prd:nth-child(2n+1) .discript { order: 2; }
+/* line 95, main.scss */
+.sectionWrap .products .prd:nth-child(2n) { margin-bottom: 0; }
+/* line 97, main.scss */
+.sectionWrap .products .prd:nth-child(2n) .prd-image { order: 2; }
+/* line 100, main.scss */
+.sectionWrap .products .prd:nth-child(2n) .discript { order: 1; }
+/* line 105, main.scss */
+.sectionWrap .products .prd .prd-image { width: 343px; }
+@media screen and (max-width: 767px) { /* line 105, main.scss */
+  .sectionWrap .products .prd .prd-image { width: 55vw; margin: auto; margin-bottom: 3vw; } }
+/* line 113, main.scss */
+.sectionWrap .products .prd .discript { width: 368px; }
+@media screen and (max-width: 767px) { /* line 113, main.scss */
+  .sectionWrap .products .prd .discript { width: 100%; } }
+/* line 118, main.scss */
+.sectionWrap .products .prd .discript .prd-disc-image { width: 91%; margin: auto; margin-bottom: 15px; }
+@media screen and (max-width: 767px) { /* line 118, main.scss */
+  .sectionWrap .products .prd .discript .prd-disc-image { width: 67%; margin-bottom: 2vw; } }
+/* line 128, main.scss */
+.sectionWrap .products .prd .discript .prd-disc-text { margin-bottom: 0; }
+@media screen and (max-width: 767px) { /* line 128, main.scss */
+  .sectionWrap .products .prd .discript .prd-disc-text { width: 83%; margin: 0 auto; } }
+/* line 138, main.scss */
+.sectionWrap .comments { width: 757px; margin: auto; }
+@media screen and (max-width: 767px) { /* line 138, main.scss */
+  .sectionWrap .comments { width: 83%; } }
+/* line 144, main.scss */
+.sectionWrap .comments .com-text { font-size: 21px; font-family: "ヒラギノ明朝 Pro W3", "ＭＳ Ｐ明朝", "MS PMincho","Hiragino Mincho Pro", "serif"; font-weight: bold; color: #fff; line-height: 45px; margin-bottom: 62px; letter-spacing: 1.3px; text-align: justify; font-feature-settings: "palt"; -webkit-font-feature-settings: "palt"; }
+@media screen and (max-width: 767px) { /* line 144, main.scss */
+  .sectionWrap .comments .com-text { font-size: 3vw; line-height: 6.5vw; margin-bottom: 6vw; letter-spacing: 0.2vw; } }
+/* line 162, main.scss */
+.sectionWrap .comments .com-text:last-child { margin-bottom: 0; }
+
+/* line 169, main.scss */
+.cont-foot { background-color: #ff7800; height: 160px; display: flex; align-items: center; justify-content: center; }
+@media screen and (max-width: 767px) { /* line 169, main.scss */
+  .cont-foot { height: 25vw; } }
+/* line 178, main.scss */
+.cont-foot img { width: 176px; }
+@media screen and (max-width: 767px) { /* line 178, main.scss */
+  .cont-foot img { width: 26vw; } }
+
+/*# sourceMappingURL=main.css.map */

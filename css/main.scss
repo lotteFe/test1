@@ -1,0 +1,184 @@
+/* Scss Document */
+@mixin mq($breakpoint: pc) {
+    @if $breakpoint == sp {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }@else if $breakpoint == pc{
+        @media screen and (min-width: 768px) {
+            @content;
+        }
+    }
+}
+
+.st-Container{
+    @include mq(sp) {
+        padding: 0;
+    }
+}
+.contBack{
+    background-image: url(../img/bg.jpg);
+    @include mq(sp) {
+        background-size: 100% auto;
+    }
+}
+
+.mainVis{
+    border-bottom: 20px solid #ff7800;
+    border-top: 20px solid #ff7800;
+    padding-top: 74px;
+    padding-bottom: 63px;
+    @include mq(sp) {
+        border-bottom: 2.7vw solid #ff7800;
+        border-top: 2.7vw solid #ff7800;
+        padding-top: 6vw;
+        padding-bottom: 5.5vw;
+    }
+}
+
+.sectionWrap{
+    padding: 115px 0;
+    @include mq(sp) {
+        padding: 13vw 0;
+    }
+    &#cont1{
+        border-bottom: 20px solid #2bb9c5;
+        @include mq(sp) {
+            border-bottom: 2.7vw solid #2bb9c5;
+        }
+    }
+    .midashi{
+        width: 325px;
+        margin: auto;
+        margin-bottom: 40px;
+        @include mq(sp) {
+            width: 47vw;
+            margin-bottom: 4vw;
+        }
+    }
+    .text{
+        text-align: center;
+        font-size: 21px;
+        font-family: "ヒラギノ明朝 Pro W3", "ＭＳ Ｐ明朝", "MS PMincho","Hiragino Mincho Pro", "serif";
+        color: #fff;
+        line-height: 45px;
+        margin-bottom: 60px;
+        @include mq(sp) {
+            font-size: 3.3vw;
+            line-height: 6.7vw;
+            margin-bottom: 9vw;
+        }
+    }
+    .products{
+        .prd{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 757px;
+            margin: auto;
+            margin-bottom: 88px;
+            @include mq(sp) {
+                width: 83%;
+                margin: auto;
+                margin-bottom: 15vw;
+                display: block;
+            }
+            &:nth-child(2n+1){
+                .prd-image{
+                    order: 1;
+                }
+                .discript{
+                    order: 2;
+                }
+            }
+            &:nth-child(2n){
+                margin-bottom: 0;
+                .prd-image{
+                    order: 2;
+                }
+                .discript{
+                    order: 1;
+                }
+
+            }
+            .prd-image{
+                width: 343px;
+                @include mq(sp) {
+                    width: 55vw;
+                    margin: auto;
+                    margin-bottom: 3vw;
+                }
+            }
+            .discript{
+                width: 368px;
+                @include mq(sp) {
+                    width: 100%;
+                }
+                .prd-disc-image{
+                    width: 91%;
+                    margin: auto;
+                    margin-bottom: 15px;
+                    @include mq(sp) {
+                        width: 67%;
+                        margin-bottom: 2vw;
+                    }
+                    
+                }
+                .prd-disc-text{
+                    margin-bottom: 0;
+                    @include mq(sp) {
+                        width: 83%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    .comments{
+        width: 757px;
+        margin: auto;
+        @include mq(sp) {
+            width: 83%;
+        }
+        .com-text{
+            font-size: 21px;
+            //font-family:"ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+            font-family: "ヒラギノ明朝 Pro W3", "ＭＳ Ｐ明朝", "MS PMincho","Hiragino Mincho Pro", "serif";
+            font-weight:bold;
+            color: #fff;
+            line-height: 45px;
+            margin-bottom: 62px;
+            letter-spacing: 1.3px;
+            text-align: justify;
+            font-feature-settings: "palt";
+            -webkit-font-feature-settings: "palt";
+            @include mq(sp) {
+                font-size: 3vw;
+                line-height: 6.5vw;
+                margin-bottom: 6vw;
+                letter-spacing: 0.2vw;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.cont-foot{
+    background-color: #ff7800;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(sp) {
+        height: 25vw;
+    }
+    img{
+        width: 176px;
+        @include mq(sp) {
+            width: 26vw;
+        }
+    }
+}
